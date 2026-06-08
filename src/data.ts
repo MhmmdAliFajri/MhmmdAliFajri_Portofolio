@@ -3,6 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import eLearnImg from './assets/images/E-LEARNLOGICGATE.png';
+import jevetHeaderImg from './assets/images/JEVET HEADER.png';
+import jevetCallPapersImg from './assets/images/JEVET-CALLFORPAPERS.png';
+import sertifikatPklImg from './assets/images/SERTIFIKAT_PKL_PLN.png';
+import sertifikatPkmImg from './assets/images/SERTIFIKAT_PKM_SMKN55.png';
+
 import { WorkExperienceItem, ActiveProjectItem, CertificateItem, CompetencyItem } from './types';
 
 export const workExperienceData: WorkExperienceItem[] = [
