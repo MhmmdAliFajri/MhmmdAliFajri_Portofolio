@@ -3,12 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import eLearnImg from './assets/images/E-LEARNLOGICGATE.png';
-import jevetHeaderImg from './assets/images/JEVET HEADER.png';
-import jevetCallPapersImg from './assets/images/JEVET-CALLFORPAPERS.png';
-import sertifikatPklImg from './assets/images/SERTIFIKAT_PKL_PLN.png';
-import sertifikatPkmImg from './assets/images/SERTIFIKAT_PKM_SMKN55.png';
-
 import { WorkExperienceItem, ActiveProjectItem, CertificateItem, CompetencyItem } from './types';
 
 export const workExperienceData: WorkExperienceItem[] = [
@@ -41,7 +35,7 @@ export const activeProjectsData: ActiveProjectItem[] = [
     title: 'E-Learn Logic Gate Sim',
     subtitle: 'An interactive educational app featuring digital circuit simulations with a user-friendly interface tailored for engineering students.',
     techBadge: 'FLUTTER',
-    imageUrl: '/src/assets/images/E-LEARNLOGICGATE.png',
+    imageUrl: '/images/E-LEARNLOGICGATE.png', // ✨ Mengarah ke public/images/E-LEARNLOGICGATE.png
     longDescription: 'An immersive Flutter-based educational suite designed to help electrical engineering students easily grasp principles of Boolean algebra and logical circuits. The app simulates real-time signals, gate tables, and offers guided circuit construction challenges.',
     features: [
       'Simulate AND, OR, NAND, NOR, XOR, XNOR, NOT gates in dynamic cascading arrays.',
@@ -59,7 +53,7 @@ export const activeProjectsData: ActiveProjectItem[] = [
     title: 'Call for Papers JEVET',
     subtitle: 'Designed informative, visually engaging academic publication media optimized for target audiences in the engineering sector.',
     techBadge: 'PUBLISHER',
-    imageUrl: '/src/assets/images/JEVET - CALL FOR PAPERS.png',
+    imageUrl: '/images/JEVET-CALLFORPAPERS.png', // ✨ Sesuai nama file tanpa spasi di folder public kamu
     longDescription: 'A custom-tailored campaign set designed to draw highly refined engineering and technical papers to the Journal of Electrical Vocational Education and Technology (JEVET). Includes posters, social graphics, and informational schematics optimized for vocational researchers.',
     features: [
       'Strict visual alignment with formal academic and engineering institutions.',
@@ -77,7 +71,7 @@ export const activeProjectsData: ActiveProjectItem[] = [
     title: 'Header Design JEVET',
     subtitle: 'Clean, authoritative header design for the Journal of Electrical Vocational Education and Technology website.',
     techBadge: 'WEB_ASSET',
-    imageUrl: '/src/assets/images/JEVET HEADER.png',
+    imageUrl: '/images/JEVET HEADER.png', // ✨ Sesuai nama file menggunakan spasi di folder public kamu
     longDescription: 'An elegant header restructuring for JEVET website, establishing absolute scholastic authority and boosting mobile compliance. This asset modernizes the journal portal layout using crisp line arrays, classic Indonesian educational branding tones, and strict grid alignments.',
     features: [
       'Responsive full-width desktop layout with modular grid guidelines.',
@@ -99,7 +93,7 @@ export const certificatesData: CertificateItem[] = [
     issuer: 'PT PLN (Persero) Pusat Sertifikasi',
     duration: 'Feb - Apr 2024',
     type: 'INTERNSHIP',
-    imageUrl: '/src/assets/images/SERTIFIKAT PKL PLN.png',
+    imageUrl: '/images/SERTIFIKAT_PKL_PLN.png', // ✨ Sesuai nama file menggunakan underscore di folder public kamu
     description: 'Implementing an industrial internship program to align Electrical Engineering theory with national electrical industry standards.'
   },
   {
@@ -109,7 +103,7 @@ export const certificatesData: CertificateItem[] = [
     duration: 'Jul - Dec 2024',
     score: '95.34',
     type: 'CREDENTIAL',
-    imageUrl: '/src/assets/images/SERTIFIKAT PKM SMKN 55.png',
+    imageUrl: '/images/SERTIFIKAT_PKM_SMKN55.png', // ✨ Sesuai nama file tanpa spasi di folder public kamu
     description: 'Responsible for planning, implementing teaching, and evaluating learning in Electrical Power Installation Engineering.'
   },
   {
