@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Spline Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --color-bg-space: #0F0F0F;
+  --color-surface-base: rgba(15, 15, 15, 0.9);
+  --color-cyan-glow: rgba(224, 255, 0, 0.35);
+  --color-green-glow: rgba(240, 240, 240, 0.15);
+}
+
+/* Base styling from Artistic Flair Theme */
+body {
+  background-color: #0F0F0F;
+  color: #F0F0F0;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar matched to theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E0FF00;
+}
+
+/* Cyber grid background in muted theme color */
+.cyber-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: 
+    linear-gradient(rgba(224, 255, 0, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(224, 255, 0, 0.015) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center center;
+}
+
+/* Radical radial gradient mapping for depth */
+.cyber-nodes-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 30%, rgba(20, 20, 20, 0.6) 0%, rgba(15, 15, 15, 0.98) 80%);
+  pointer-events: none;
+}
+
+/* Glowing high contrast circuitry lines in Electric Yellow */
+.circuit-line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, #E0FF00, transparent);
+  height: 1px;
+  width: 250px;
+  opacity: 0.12;
+  animation: glide-left 14s linear infinite;
+}
+
+@keyframes glide-left {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+/* Cyber glow borders */
+.cyber-glow-cyan {
+  box-shadow: 0 0 15px rgba(224, 255, 0, 0.12);
+  border: 1px solid rgba(224, 255, 0, 0.25);
+}
+
+.cyber-glow-green {
+  box-shadow: 0 0 15px rgba(240, 240, 240, 0.05);
+  border: 1px solid rgba(42, 42, 42, 0.8);
+}
+
+.cyber-glow-cyan-hover:hover {
+  box-shadow: 0 0 20px rgba(224, 255, 0, 0.3);
+  border-color: #E0FF00;
+  transition: all 0.3s ease;
+}
+
+.cyber-glow-green-hover:hover {
+  box-shadow: 0 0 15px rgba(240, 240, 240, 0.1);
+  border-color: rgba(240, 240, 240, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   DYNAMIC COLOR THEME ENGINES (Cyberpunk Multi-Spectrum)
+   ========================================================================== */
+
+:root {
+  --primary-accent: #E0FF00;
+  --primary-accent-rgb: 224, 255, 0;
+  --primary-accent-glow: rgba(224, 255, 0, 0.12);
+  --primary-accent-glow-strong: rgba(224, 255, 0, 0.3);
+}
+
+.theme-electric-yellow {
+  --primary-accent: #E0FF00;
+  --primary-accent-rgb: 224, 255, 0;
+  --primary-accent-glow: rgba(224, 255, 0, 0.12);
+  --primary-accent-glow-strong: rgba(224, 255, 0, 0.3);
+}
+
+.theme-neo-cyan {
+  --primary-accent: #00E5FF;
+  --primary-accent-rgb: 0, 229, 255;
+  --primary-accent-glow: rgba(0, 229, 255, 0.12);
+  --primary-accent-glow-strong: rgba(0, 229, 255, 0.3);
+}
+
+.theme-cyber-blue {
+  --primary-accent: #2E86FF;
+  --primary-accent-rgb: 46, 134, 255;
+  --primary-accent-glow: rgba(46, 134, 255, 0.12);
+  --primary-accent-glow-strong: rgba(46, 134, 255, 0.3);
+}
+
+.theme-retro-amber {
+  --primary-accent: #FFB300;
+  --primary-accent-rgb: 255, 179, 0;
+  --primary-accent-glow: rgba(255, 179, 0, 0.12);
+  --primary-accent-glow-strong: rgba(255, 179, 0, 0.3);
+}
+
+.theme-hazard-red {
+  --primary-accent: #FF3D00;
+  --primary-accent-rgb: 255, 61, 0;
+  --primary-accent-glow: rgba(255, 61, 0, 0.12);
+  --primary-accent-glow-strong: rgba(255, 61, 0, 0.3);
+}
+
+.theme-matrix-green {
+  --primary-accent: #00FF66;
+  --primary-accent-rgb: 0, 255, 102;
+  --primary-accent-glow: rgba(0, 255, 102, 0.12);
+  --primary-accent-glow-strong: rgba(0, 255, 102, 0.3);
+}
+
+.theme-violet-pulse {
+  --primary-accent: #D500F9;
+  --primary-accent-rgb: 213, 0, 249;
+  --primary-accent-glow: rgba(213, 0, 249, 0.12);
+  --primary-accent-glow-strong: rgba(213, 0, 249, 0.3);
+}
+
+/* Force override generated hex classes dynamically */
+.text-\[\#E0FF00\] { color: var(--primary-accent) !important; }
+.bg-\[\#E0FF00\] { background-color: var(--primary-accent) !important; }
+.border-\[\#E0FF00\] { border-color: var(--primary-accent) !important; }
+
+/* Interactive Hover States */
+.hover\:text-\[\#E0FF00\]:hover { color: var(--primary-accent) !important; }
+.hover\:bg-\[\#E0FF00\]:hover { background-color: var(--primary-accent) !important; }
+.hover\:border-\[\#E0FF00\]:hover { border-color: var(--primary-accent) !important; }
+
+/* Group Hover States */
+.group-hover\:text-\[\#E0FF00\]:hover { color: var(--primary-accent) !important; }
+.group:hover .group-hover\:text-\[\#E0FF00\] { color: var(--primary-accent) !important; }
+.group-hover\:bg-\[\#E0FF00\]:hover { background-color: var(--primary-accent) !important; }
+.group:hover .group-hover\:bg-\[\#E0FF00\] { background-color: var(--primary-accent) !important; }
+.group-hover\:border-\[\#E0FF00\]:hover { border-color: var(--primary-accent) !important; }
+.group:hover .group-hover\:border-\[\#E0FF00\] { border-color: var(--primary-accent) !important; }
+
+/* Opacity with transparent variables */
+.bg-\[\#E0FF00\]\/10 { background-color: var(--primary-accent-glow) !important; }
+.bg-\[\#E0FF00\]\/5 { background-color: rgba(var(--primary-accent-rgb), 0.05) !important; }
+.border-\[\#E0FF00\]\/10 { border-color: rgba(var(--primary-accent-rgb), 0.1) !important; }
+.border-\[\#E0FF00\]\/15 { border-color: rgba(var(--primary-accent-rgb), 0.15) !important; }
+.border-\[\#E0FF00\]\/20 { border-color: rgba(var(--primary-accent-rgb), 0.2) !important; }
+.border-\[\#E0FF00\]\/30 { border-color: rgba(var(--primary-accent-rgb), 0.3) !important; }
+.border-\[\#E0FF00\]\/40 { border-color: rgba(var(--primary-accent-rgb), 0.4) !important; }
+.border-\[\#E0FF00\]\/55 { border-color: rgba(var(--primary-accent-rgb), 0.55) !important; }
+.border-\[\#E0FF00\]\/50 { border-color: rgba(var(--primary-accent-rgb), 0.5) !important; }
+.border-\[\#E0FF00\]\/60 { border-color: rgba(var(--primary-accent-rgb), 0.6) !important; }
+.text-\[\#E0FF00\]\/50 { color: rgba(var(--primary-accent-rgb), 0.5) !important; }
+.text-\[\#E0FF00\]\/75 { color: rgba(var(--primary-accent-rgb), 0.75) !important; }
+
+/* Focus class overriding */
+.focus\:border-\[\#E0FF00\]:focus { border-color: var(--primary-accent) !important; }
+
+/* Fix custom CSS animations & glows to leverage the dynamic variable */
+.cyber-bg {
+  background-image: 
+    linear-gradient(rgba(var(--primary-accent-rgb), 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--primary-accent-rgb), 0.015) 1px, transparent 1px) !important;
+}
+.circuit-line {
+  background: linear-gradient(90deg, transparent, var(--primary-accent), transparent) !important;
+}
+.cyber-glow-cyan {
+  box-shadow: 0 0 15px rgba(var(--primary-accent-rgb), 0.12) !important;
+  border: 1px solid rgba(var(--primary-accent-rgb), 0.25) !important;
+}
+.cyber-glow-cyan-hover:hover {
+  box-shadow: 0 0 20px rgba(var(--primary-accent-rgb), 0.3) !important;
+  border-color: var(--primary-accent) !important;
+}
+.divider-glow {
+  background: linear-gradient(90deg, rgba(var(--primary-accent-rgb), 0) 0%, rgba(var(--primary-accent-rgb), 0.3) 50%, rgba(var(--primary-accent-rgb), 0) 100__) !important;
+}
+.scanline {
+  background: rgba(var(--primary-accent-rgb), 0.15) !important;
+}
+.glow-text-cyan {
+  text-shadow: 0 0 8px rgba(var(--primary-accent-rgb), 0.5) !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-accent) !important;
+}
+
+/* Glassmorphism containers in flat, elegant dark slab design */
+.glass-panel {
+  background: #0F0F0F;
+  border: 1px solid #2A2A2A;
+}
+
+/* Dynamic glow divider lines */
+.divider-glow {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(224, 255, 0, 0) 0%, rgba(224, 255, 0, 0.3) 50%, rgba(224, 255, 0, 0) 100%);
+}
+
+/* Binary scanline animation matching yellow accent */
+.scanline {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgba(224, 255, 0, 0.15);
+  animation: scan 10s linear infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* Text pulsing in electric neon style */
+.glow-text-cyan {
+  text-shadow: 0 0 8px rgba(224, 255, 0, 0.5);
+}
+
+.glow-text-green {
+  text-shadow: 0 0 8px rgba(240, 240, 240, 0.3);
+}
+
+/* Tech tag styling */
+.tech-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 0px;
+  transition: all 0.2s ease;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+
+/* ==========================================================================
+   NIGHT VISION MODE (Ultra Black & Extreme Contrast)
+   ========================================================================== */
+
+.night-vision-activated,
+.night-vision-activated #app_root {
+  background-color: #000000 !important;
+}
+
+.night-vision-activated .cyber-nodes-gradient {
+  background: radial-gradient(circle at 50% 30%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+.night-vision-activated .glass-panel,
+.night-vision-activated [class*="bg-[#0F0F0F]"],
+.night-vision-activated [class*="bg-[#151515]"],
+.night-vision-activated [class*="bg-[#0A0A0A]"],
+.night-vision-activated [class*="bg-[#111]"],
+.night-vision-activated [class*="bg-[#0a0a0a]"],
+.night-vision-activated .bg-\[\#0F0F0F\]\/90,
+.night-vision-activated .bg-\[\#151515\]\/45,
+.night-vision-activated .bg-\[\#0B0B0B\] {
+  background-color: #000000 !important;
+  background: #000000 !important;
+}
+
+/* Elevate borders to sharp high-contrast accents */
+.night-vision-activated .border-\[\#2A2A2A\],
+.night-vision-activated .border-slate-800,
+.night-vision-activated .border-\[\#333333\] {
+  border-color: rgba(var(--primary-accent-rgb), 0.35) !important;
+}
+
+/* Ensure absolute reading clarity in ultra low-light conditions */
+.night-vision-activated .text-slate-400,
+.night-vision-activated .text-slate-300 {
+  color: #E2E8F0 !important;
+}
+
+.night-vision-activated .text-slate-500 {
+  color: #CBD5E1 !important;
+}
+
+.night-vision-activated .text-slate-600 {
+  color: #94A3B8 !important;
+}
+
+/* Tone down background grid density to protect eyesight */
+.night-vision-activated .cyber-bg {
+  opacity: 0.15 !important;
+}
+
+/* Boost active glowing signals */
+.night-vision-activated .circuit-line {
+  opacity: 0.25 !important;
+}
+
+.night-vision-activated .divider-glow {
+  background: linear-gradient(90deg, rgba(var(--primary-accent-rgb), 0) 0%, rgba(var(--primary-accent-rgb), 0.55) 50%, rgba(var(--primary-accent-rgb), 0) 100__) !important;
+}
+
