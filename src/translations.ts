@@ -183,7 +183,7 @@ export const translations = {
         title: 'Call for Papers JEVET',
         subtitle: 'Designed informative, visually engaging academic publication media optimized for target audiences in the engineering sector.',
         techBadge: 'PUBLISHER',
-        imageUrl: '/src/assets/images/JEVET - CALL FOR PAPERS.png',
+        imageUrl: '/src/assets/images/JEVET-CALLFORPAPERS.png',
         longDescription: 'A custom-tailored campaign set designed to draw highly refined engineering and technical papers to the Journal of Electrical Vocational Education and Technology (JEVET). Includes posters, social graphics, and informational schematics optimized for vocational researchers.',
         features: [
           'Strict visual alignment with formal academic and engineering institutions.',
@@ -201,7 +201,7 @@ export const translations = {
         title: 'Header Design JEVET',
         subtitle: 'Clean, authoritative header design for the Journal of Electrical Vocational Education and Technology website.',
         techBadge: 'WEB_ASSET',
-        imageUrl: '/src/assets/images/JEVET HEADER.png',
+        imageUrl: '/src/assets/images/JEVET_HEADER.png',
         longDescription: 'An elegant header restructuring for JEVET website, establishing absolute scholastic authority and boosting mobile compliance. This asset modernizes the journal portal layout using crisp line arrays, classic Indonesian educational branding tones, and strict grid alignments.',
         features: [
           'Responsive full-width desktop layout with modular grid guidelines.',
@@ -223,7 +223,7 @@ export const translations = {
         issuer: 'PT PLN (Persero) Pusat Sertifikasi',
         duration: 'Feb - Apr 2024',
         type: 'INTERNSHIP',
-        imageUrl: '/src/assets/images/SERTIFIKAT PKL PLN.png',
+        imageUrl: '/src/assets/images/SERTIFIKAT_PKL_PLN.png',
         description: 'Implementing an industrial internship program to align Electrical Engineering theory with national electrical industry standards.'
       },
       {
@@ -233,7 +233,7 @@ export const translations = {
         duration: 'Jul - Dec 2024',
         score: '95.34',
         type: 'CREDENTIAL',
-        imageUrl: '/src/assets/images/SERTIFIKAT PKM SMKN 55.png',
+        imageUrl: '/src/assets/images/SERTIFIKAT_PKM_SMKN55.png',
         description: 'Responsible for planning, implementing, and evaluating learning in Electrical Power Installation Engineering.'
       },
       {
@@ -457,7 +457,7 @@ export const translations = {
         title: 'Call for Papers JEVET',
         subtitle: 'Mendesain media publikasi akademik yang informatif dan menarik secara visual untuk audiens di sektor teknik.',
         techBadge: 'PUBLISHER',
-        imageUrl: '/src/assets/images/JEVET - CALL FOR PAPERS.png',
+        imageUrl: '/src/assets/images/JEVET-CALLFORPAPERS.png',
         longDescription: 'Kampanye publikasi teratur yang disesuaikan untuk menarik makalah teknik berkualitas tinggi ke Journal of Electrical Vocational Education and Technology (JEVET). Termasuk poster publikasi, grafis media sosial, dan selebaran akademik.',
         features: [
           'Penyelarasan visual dengan institusi akademik dan teknik formal.',
@@ -475,7 +475,7 @@ export const translations = {
         title: 'Header Design JEVET',
         subtitle: 'Desain header website yang bersih dan berwibawa untuk situs Journal of Electrical Vocational Education and Technology.',
         techBadge: 'WEB_ASSET',
-        imageUrl: '/src/assets/images/JEVET HEADER.png',
+        imageUrl: '/src/assets/images/JEVET_HEADER.png',
         longDescription: 'Restrukturisasi header elegan untuk website JEVET, menetapkan otoritas ilmiah tingkat tinggi dan mengoptimalkan kegunaan aplikasi seluler. Aset memodifikasi tata letak portal jurnal menggunakan kisi garis silet, warna akademik, dan penataan kisi presisi.',
         features: [
           'Tata letak desktop lebar penuh responsif dengan panduan kisi pembatas modular.',
@@ -497,7 +497,7 @@ export const translations = {
         issuer: 'PT PLN (Persero) Pusat Sertifikasi',
         duration: 'Feb - Apr 2024',
         type: 'INTERNSHIP',
-        imageUrl: '/src/assets/images/SERTIFIKAT PKL PLN.png',
+        imageUrl: '/src/assets/images/SERTIFIKAT_PKL_PLN.png',
         description: 'Melaksanakan program magang industri guna menyelaraskan teori Teknik Elektro dengan standar industri kelistrikan nasional.'
       },
       {
@@ -507,7 +507,7 @@ export const translations = {
         duration: 'Jul - Des 2024',
         score: '95.34',
         type: 'CREDENTIAL',
-        imageUrl: '/src/assets/images/SERTIFIKAT PKM SMKN 55.png',
+        imageUrl: '/src/assets/images/SERTIFIKAT_PKM_SMKN55.png',
         description: 'Bertanggung jawab dalam perencanaan, pelaksanaan mengajar, dan evaluasi pembelajaran pada Teknik Instalasi Tenaga Listrik.'
       },
       {
