@@ -439,7 +439,7 @@ export const translations = {
         title: 'E-Learn Logic Gate Sim',
         subtitle: 'Aplikasi edukasi interaktif simulasi sirkuit digital dengan antarmuka ramah pengguna yang disesuaikan untuk mahasiswa teknik.',
         techBadge: 'FLUTTER',
-        imageUrl: '/src/assets/images/E-LEARNLOGICGATE.png',
+        imageUrl: '/images/E-LEARNLOGICGATE.png',
         longDescription: 'Rangkaian edukasi berbasis Flutter mendalam yang dirancang untuk membantu mahasiswa teknik elektro memahami prinsip aljabar Boolean dan sirkuit logika dengan mudah. Aplikasi ini mensimulasikan sinyal waktu nyata, tabel gerbang logis, dan menawarkan tantangan konstruksi sirkuit interaktif.',
         features: [
           'Simulasikan gerbang AND, OR, NAND, NOR, XOR, XNOR, NOT dalam rangkaian kaskade dinamis.',
