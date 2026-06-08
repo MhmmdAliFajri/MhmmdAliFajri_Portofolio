@@ -16,7 +16,7 @@ export interface ActiveProjectItem {
   title: string;
   subtitle: string;
   techBadge: string;
-  imageUrl: string | any;
+  imageUrl: string;
   longDescription: string;
   features: string[];
   links: {
@@ -30,15 +30,15 @@ export interface CertificateItem {
   title: string;
   issuer: string;
   duration: string;
-  type: string; 
-  imageUrl?: string | any; 
+  type: string; // e.g., 'INTERNSHIP', 'CREDENTIAL', 'COURSES'
+  imageUrl?: string;
   description: string;
   score?: string;
 }
 
 export interface CompetencyItem {
   name: string;
-  level: number; 
+  level: number; // percentage out of 100
   info: string;
   isSpecial?: boolean;
 }
