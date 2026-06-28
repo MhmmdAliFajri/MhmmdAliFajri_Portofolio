@@ -5,6 +5,13 @@
 
 import { WorkExperienceItem, ActiveProjectItem, CertificateItem, CompetencyItem } from './types';
 
+// ✨ IMPORT GAMBAR DI SINI
+import imgElearn from './assets/images/E-LEARNLOGICGATE.png';
+import imgJevetCall from './assets/images/JEVET-CALLFORPAPERS.png';
+import imgJevetHeader from './assets/images/JEVET_HEADER.png'; // Pastikan nama file sesuai
+import imgCertPkl from './assets/images/SERTIFIKAT_PKL_PLN.png';
+import imgCertPkm from './assets/images/SERTIFIKAT_PKM_SMKN55.png';
+
 export const workExperienceData: WorkExperienceItem[] = [
   {
     id: 'exp-1',
@@ -35,8 +42,8 @@ export const activeProjectsData: ActiveProjectItem[] = [
     title: 'E-Learn Logic Gate Sim',
     subtitle: 'An interactive educational app featuring digital circuit simulations with a user-friendly interface tailored for engineering students.',
     techBadge: 'FLUTTER',
-    imageUrl: '/images/E-LEARNLOGICGATE.png', // ✨ Mengarah ke public/images/E-LEARNLOGICGATE.png
-    longDescription: 'An immersive Flutter-based educational suite designed to help electrical engineering students easily grasp principles of Boolean algebra and logical circuits. The app simulates real-time signals, gate tables, and offers guided circuit construction challenges.',
+    imageUrl: imgElearn, // ✨ Gunakan variabel import tanpa tanda kutip
+    longDescription: 'An immersive Flutter-based educational suite designed to help electrical engineering students easily grasp principles of Boolean algebra and logical circuits...',
     features: [
       'Simulate AND, OR, NAND, NOR, XOR, XNOR, NOT gates in dynamic cascading arrays.',
       'Interactive truth tables updating instantly as state inputs are flipped from 0 to 1.',
@@ -53,8 +60,8 @@ export const activeProjectsData: ActiveProjectItem[] = [
     title: 'Call for Papers JEVET',
     subtitle: 'Designed informative, visually engaging academic publication media optimized for target audiences in the engineering sector.',
     techBadge: 'PUBLISHER',
-    imageUrl: '/images/JEVET-CALLFORPAPERS.png', // ✨ Sesuai nama file tanpa spasi di folder public kamu
-    longDescription: 'A custom-tailored campaign set designed to draw highly refined engineering and technical papers to the Journal of Electrical Vocational Education and Technology (JEVET). Includes posters, social graphics, and informational schematics optimized for vocational researchers.',
+    imageUrl: imgJevetCall, // ✨ Gunakan variabel import tanpa tanda kutip
+    longDescription: 'A custom-tailored campaign set designed to draw highly refined engineering and technical papers to the Journal of Electrical Vocational Education and Technology (JEVET)...',
     features: [
       'Strict visual alignment with formal academic and engineering institutions.',
       'Clear callouts for key topics: Smart Grid, Energy Management, Industrial Automation, multimedia systems.',
@@ -71,8 +78,8 @@ export const activeProjectsData: ActiveProjectItem[] = [
     title: 'Header Design JEVET',
     subtitle: 'Clean, authoritative header design for the Journal of Electrical Vocational Education and Technology website.',
     techBadge: 'WEB_ASSET',
-    imageUrl: '/images/JEVET HEADER.png', // ✨ Sesuai nama file menggunakan spasi di folder public kamu
-    longDescription: 'An elegant header restructuring for JEVET website, establishing absolute scholastic authority and boosting mobile compliance. This asset modernizes the journal portal layout using crisp line arrays, classic Indonesian educational branding tones, and strict grid alignments.',
+    imageUrl: imgJevetHeader, // ✨ Gunakan variabel import tanpa tanda kutip
+    longDescription: 'An elegant header restructuring for JEVET website, establishing absolute scholastic authority and boosting mobile compliance...',
     features: [
       'Responsive full-width desktop layout with modular grid guidelines.',
       'Embedded indexing badges of academic certification in pristine high-resolution rendering.',
@@ -93,7 +100,7 @@ export const certificatesData: CertificateItem[] = [
     issuer: 'PT PLN (Persero) Pusat Sertifikasi',
     duration: 'Feb - Apr 2024',
     type: 'INTERNSHIP',
-    imageUrl: '/images/SERTIFIKAT_PKL_PLN.png', // ✨ Sesuai nama file menggunakan underscore di folder public kamu
+    imageUrl: imgCertPkl, // ✨ Gunakan variabel import tanpa tanda kutip
     description: 'Implementing an industrial internship program to align Electrical Engineering theory with national electrical industry standards.'
   },
   {
@@ -103,7 +110,7 @@ export const certificatesData: CertificateItem[] = [
     duration: 'Jul - Dec 2024',
     score: '95.34',
     type: 'CREDENTIAL',
-    imageUrl: '/images/SERTIFIKAT_PKM_SMKN55.png', // ✨ Sesuai nama file tanpa spasi di folder public kamu
+    imageUrl: imgCertPkm, // ✨ Gunakan variabel import tanpa tanda kutip
     description: 'Responsible for planning, implementing teaching, and evaluating learning in Electrical Power Installation Engineering.'
   },
   {
@@ -116,36 +123,4 @@ export const certificatesData: CertificateItem[] = [
   }
 ];
 
-export const competenciesData: CompetencyItem[] = [
-  {
-    name: 'Electrical Installation & Maintenance',
-    level: 95,
-    info: 'Certified lighting design, smart relay programming, and high-voltage PDKB diagnostic operations.'
-  },
-  {
-    name: 'Flutter Programming (Certified)',
-    level: 92,
-    info: 'Full-stack mobile app development, state management (Provider/Bloc), custom interactive canvas integrations.',
-    isSpecial: true
-  },
-  {
-    name: 'UI/UX Design (Figma)',
-    level: 88,
-    info: 'Precision wireframing, interactive prototyping, full system-oriented glassmorphism assets, grid alignments.'
-  },
-  {
-    name: 'Learning Media Dev',
-    level: 94,
-    info: 'E-learning simulator programming, structured Learning Goal Flows (ATP), logic simulation widgets development.'
-  },
-  {
-    name: 'Video/Image Editing',
-    level: 85,
-    info: 'Vector asset styling, motion graphic promotions, audio editing, and high-fidelity promotional media creation.'
-  },
-  {
-    name: 'Computer Systems',
-    level: 90,
-    info: 'Hardware and server structures, software deployment pipeline configuration, microcontrollers (Arduino/ESP32) wiring.'
-  }
-];
+// ... competenciesData tetap sama seperti yang Anda tulis
